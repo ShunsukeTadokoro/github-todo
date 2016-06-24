@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Github TODO App</title>
+  <link rel="stylesheet" href="./assets/app.css">
+</head>
+<body>
+  <h1>やることリスト</h1>
+  <div id="list" class="scene">
+    <ul id="todos"></ul>
+
+    <h2>やることを追加する</h2>
+    <dl>
+      <dt><label>やること</label></dt>
+      <dd><input type="text" id="addTodoTitle" placeholder="カリカリを買う" /></dd>
+      <dt><label>画像</label></dt>
+      <dd><input type="file" id="addTodoBody" /></dd>
+    </dl>
+    <img id="preview" src="http://placehold.it/400x300" height="300" alt="Image preview...">
+    <p><button id="addTodoBtn" data-todo-id="">Add TODO</button></p>
+  </div>
+  <div id="detail" class="scene">
+    <h2 id="detailTitle"></h2>
+    <img src="http://placehold.it/400x300" id="detailPreview" height="300" alt="image">
+    <button id="detailDone" data-todo-id="">Done</button>
+    
+    <a href="#" id="detailBack">Back</a>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
